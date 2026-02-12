@@ -81,8 +81,12 @@ $(document).ready(function () {
   $(".filter-btn").on("click", function () {
     var category = $(this).data("category");
 
-    $(".filter-btn").removeClass("bg-gold text-navy").addClass("bg-navy-light text-white");
-    $(this).removeClass("bg-navy-light text-white").addClass("bg-gold text-navy");
+    $(".filter-btn")
+      .removeClass("active bg-gold text-navy border-gold")
+      .addClass("bg-navy text-white border-white/10");
+    $(this)
+      .addClass("active bg-gold text-navy border-gold")
+      .removeClass("bg-navy text-white border-white/10");
 
     // Show all on mobile when filtering
     $(".mobile-hidden").addClass("mobile-shown");
