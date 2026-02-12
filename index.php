@@ -12,14 +12,14 @@ $team = [
     [
         'name'     => 'Jazmin Von Poleski',
         'role'     => 'Asesora de Inversiones',
-        'photo'    => '/docs/jazmin.jpg',
+        'photo'    => '/src/img/jazmin.jpg',
         'whatsapp' => '595985429202',
         'phone'    => '0985 429 202',
     ],
     [
         'name'     => 'Noemi Romero',
         'role'     => 'Asesora de Inversiones',
-        'photo'    => '/docs/noemi.jpg',
+        'photo'    => '/src/img/noemi.jpg',
         'whatsapp' => '595983421202',
         'phone'    => '0983 421 202',
     ],
