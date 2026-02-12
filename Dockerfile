@@ -1,5 +1,8 @@
 FROM php:8.3-apache
 
+# Install system dependencies required by Composer
+RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
+
 # Enable Apache rewrite module
 RUN a2enmod rewrite
 
