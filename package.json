@@ -1,0 +1,12 @@
+{
+  "name": "choiceparaguay",
+  "private": true,
+  "scripts": {
+    "build:css": "npx @tailwindcss/cli -i src/style/app.css -o src/style/output.css --minify",
+    "watch:css": "npx @tailwindcss/cli -i src/style/app.css -o src/style/output.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4",
+    "tailwindcss": "^4"
+  }
+}

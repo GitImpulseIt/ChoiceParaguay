@@ -1,0 +1,65 @@
+<section id="inversiones" class="py-20 md:py-28 bg-navy-light">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center mb-12 observe-fade">
+      <h2 class="heading-accent text-3xl md:text-4xl font-bold mb-6">Inversiones</h2>
+      <p class="text-white/70 max-w-2xl mx-auto text-lg">
+        Descubrí los proyectos inmobiliarios más importantes de Paraguay. Desde proyectos en pozo hasta unidades terminadas.
+      </p>
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-3 mb-12 observe-fade">
+      <button class="filter-btn bg-gold text-navy font-semibold px-6 py-2.5 rounded-full text-sm transition-colors" data-category="all">
+        Todos
+      </button>
+      <button class="filter-btn bg-navy text-white font-semibold px-6 py-2.5 rounded-full text-sm transition-colors border border-white/10" data-category="pozo">
+        En Pozo
+      </button>
+      <button class="filter-btn bg-navy text-white font-semibold px-6 py-2.5 rounded-full text-sm transition-colors border border-white/10" data-category="terminado">
+        Terminados
+      </button>
+      <button class="filter-btn bg-navy text-white font-semibold px-6 py-2.5 rounded-full text-sm transition-colors border border-white/10" data-category="lanzamiento">
+        Nuevos Lanzamientos
+      </button>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+      {% for project in projects %}
+        <div class="project-item bg-navy rounded-xl p-5 border border-white/5 hover:border-gold/30 transition-colors observe-fade"
+             data-category="{{ project.category }}">
+          <div class="flex items-start justify-between mb-3">
+            <h4 class="text-lg font-bold">{{ project.name }}</h4>
+            <span class="project-badge text-xs font-semibold px-3 py-1 rounded-full shrink-0 ml-2
+              {% if project.category == 'pozo' %}
+                bg-blue-500/20 text-blue-300
+              {% elseif project.category == 'terminado' %}
+                bg-green-500/20 text-green-300
+              {% else %}
+                bg-gold/20 text-gold
+              {% endif %}
+            ">
+              {% if project.category == 'pozo' %}
+                En Pozo
+              {% elseif project.category == 'terminado' %}
+                Terminado
+              {% else %}
+                Nuevo
+              {% endif %}
+            </span>
+          </div>
+          <p class="text-white/50 text-sm mb-4">Tipologías, ubicación y amenities próximamente.</p>
+          <a href="https://wa.me/595985429202?text={{ ('Hola, me interesa el proyecto ' ~ project.name)|url_encode }}"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="inline-flex items-center gap-1.5 text-gold hover:text-gold-light text-sm font-medium transition-colors">
+            Consultar
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
