@@ -39,7 +39,7 @@
     <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
       {% for member in team %}
         <div class="team-card bg-navy-light rounded-2xl overflow-hidden observe-fade">
-          <img src="{{ member.photo }}" alt="{{ member.name }}" class="w-full h-80 object-cover object-top">
+          <img src="{{ member.photo }}" alt="{{ member.name }}" class="w-full aspect-[3/4] object-cover object-top">
           <div class="p-6">
             <span class="text-gold text-xs font-semibold uppercase tracking-widest">{{ member.role }}</span>
             <h4 class="text-xl font-bold mt-1 mb-3">{{ member.name }}</h4>
