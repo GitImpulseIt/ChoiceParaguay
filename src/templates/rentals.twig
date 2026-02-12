@@ -35,59 +35,15 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-2 gap-4">
-        <div class="bg-navy-light rounded-xl p-5 text-center">
-          <div class="text-3xl mb-3">🏢</div>
-          <h5 class="font-semibold text-sm">Monoambientes</h5>
-        </div>
-        <div class="bg-navy-light rounded-xl p-5 text-center">
-          <div class="text-3xl mb-3">🛏️</div>
-          <h5 class="font-semibold text-sm">1 Dormitorio</h5>
-        </div>
-        <div class="bg-navy-light rounded-xl p-5 text-center">
-          <div class="text-3xl mb-3">🏠</div>
-          <h5 class="font-semibold text-sm">2 Dormitorios</h5>
-        </div>
-        <div class="bg-navy-light rounded-xl p-5 text-center">
-          <div class="text-3xl mb-3">🚗</div>
-          <h5 class="font-semibold text-sm">Cochera</h5>
-        </div>
+      <div class="flex flex-wrap gap-3">
+        <span class="inline-flex items-center gap-1.5 bg-navy-light rounded-full px-4 py-2 text-white/70 text-xs">🏢 Monoambientes</span>
+        <span class="inline-flex items-center gap-1.5 bg-navy-light rounded-full px-4 py-2 text-white/70 text-xs">🛏️ 1 Dormitorio</span>
+        <span class="inline-flex items-center gap-1.5 bg-navy-light rounded-full px-4 py-2 text-white/70 text-xs">🏠 2 Dormitorios</span>
+        <span class="inline-flex items-center gap-1.5 bg-navy-light rounded-full px-4 py-2 text-white/70 text-xs">🚗 Cochera</span>
       </div>
     </div>
 
-    <div class="grid md:grid-cols-3 gap-6 mb-12 observe-fade">
-      <div class="bg-navy-light rounded-xl p-6 border border-white/5">
-        <div class="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-          </svg>
-        </div>
-        <h5 class="font-bold mb-2">Gestión Operativa Integral</h5>
-        <p class="text-white/60 text-sm leading-relaxed">Servicio completo de administración para maximizar el rendimiento de tu propiedad.</p>
-      </div>
-
-      <div class="bg-navy-light rounded-xl p-6 border border-white/5">
-        <div class="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-          </svg>
-        </div>
-        <h5 class="font-bold mb-2">Gestión Financiera Transparente</h5>
-        <p class="text-white/60 text-sm leading-relaxed">Reportes claros y detallados sobre el rendimiento de tu inversión.</p>
-      </div>
-
-      <div class="bg-navy-light rounded-xl p-6 border border-white/5">
-        <div class="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
-          </svg>
-        </div>
-        <h5 class="font-bold mb-2">Tarifas Dinámicas</h5>
-        <p class="text-white/60 text-sm leading-relaxed">Aplicamos tarifas dinámicas para maximizar ingresos en temporada alta en Airbnb y Booking.</p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto mb-12 space-y-4 observe-fade">
+    <div class="max-w-4xl mx-auto mb-12 space-y-4 observe-fade">
       <div class="flex items-center gap-4 bg-navy-light/60 rounded-xl px-6 py-4 border border-white/5">
         <div class="text-2xl shrink-0">💰</div>
         <p class="text-white/80 text-sm leading-relaxed"><span class="text-gold font-semibold">Ingresos Pasivos:</span> Depósito mensual de rentabilidad sin esfuerzo.</p>
@@ -116,6 +72,36 @@
       <div class="flex justify-center items-center gap-12 md:gap-20">
         <img src="/src/img/airbnb.png" alt="Airbnb" class="h-28 md:h-32 object-contain">
         <img src="/src/img/booking.png" alt="Booking" class="h-28 md:h-32 rounded-xl object-contain">
+      </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row gap-4 mt-10 observe-fade">
+      <div class="flex-1 flex items-center gap-3 bg-navy-light/40 rounded-lg px-5 py-3 border border-white/5">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gold shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+        </svg>
+        <div>
+          <h5 class="font-semibold text-sm">Gestión Operativa Integral</h5>
+          <p class="text-white/50 text-xs">Administración completa de tu propiedad.</p>
+        </div>
+      </div>
+      <div class="flex-1 flex items-center gap-3 bg-navy-light/40 rounded-lg px-5 py-3 border border-white/5">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gold shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+        </svg>
+        <div>
+          <h5 class="font-semibold text-sm">Gestión Financiera Transparente</h5>
+          <p class="text-white/50 text-xs">Reportes claros sobre tu inversión.</p>
+        </div>
+      </div>
+      <div class="flex-1 flex items-center gap-3 bg-navy-light/40 rounded-lg px-5 py-3 border border-white/5">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gold shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+        </svg>
+        <div>
+          <h5 class="font-semibold text-sm">Tarifas Dinámicas</h5>
+          <p class="text-white/50 text-xs">Maximizar ingresos en temporada alta.</p>
+        </div>
       </div>
     </div>
 
