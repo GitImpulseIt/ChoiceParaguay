@@ -45,25 +45,6 @@ $(document).ready(function () {
     });
   });
 
-  // --- Fade-in on scroll (Intersection Observer) ---
-  if ("IntersectionObserver" in window) {
-    var observer = new IntersectionObserver(
-      function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            $(entry.target).addClass("fade-in-up");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.15 }
-    );
-
-    $(".observe-fade").each(function () {
-      observer.observe(this);
-    });
-  }
-
   // --- Smooth scroll for anchor links ---
   $('a[href^="#"]').on("click", function (e) {
     e.preventDefault();
