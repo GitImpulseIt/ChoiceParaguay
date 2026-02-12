@@ -111,6 +111,16 @@ html {
   transform: scale(1.05);
 }
 
+/* Mobile: hide projects beyond 6, show all on sm+ */
+@media (max-width: 639px) {
+  .mobile-hidden {
+    display: none;
+  }
+  .mobile-hidden.mobile-shown {
+    display: block;
+  }
+}
+
 /* Navigation active state */
 .nav-link {
   position: relative;

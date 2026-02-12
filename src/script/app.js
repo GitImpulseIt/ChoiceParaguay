@@ -84,11 +84,21 @@ $(document).ready(function () {
     $(".filter-btn").removeClass("bg-gold text-navy").addClass("bg-navy-light text-white");
     $(this).removeClass("bg-navy-light text-white").addClass("bg-gold text-navy");
 
+    // Show all on mobile when filtering
+    $(".mobile-hidden").addClass("mobile-shown");
+    $("#show-more-projects").hide();
+
     if (category === "all") {
       $(".project-item").fadeIn(300);
     } else {
       $(".project-item").fadeOut(200);
       $('.project-item[data-category="' + category + '"]').fadeIn(300);
     }
+  });
+
+  // --- Mobile "show more" projects ---
+  $("#show-more-projects button").on("click", function () {
+    $(".mobile-hidden").addClass("mobile-shown").hide().fadeIn(400);
+    $("#show-more-projects").slideUp(300);
   });
 });
