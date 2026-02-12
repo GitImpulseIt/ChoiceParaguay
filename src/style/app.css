@@ -17,18 +17,39 @@ html {
   scroll-behavior: smooth;
 }
 
-/* WhatsApp floating button pulse */
-@keyframes pulse-whatsapp {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.08);
-  }
+/* Floating WhatsApp */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  padding: 8px;
+  text-decoration: none;
+  z-index: 1000;
+  animation: pulse-whatsapp 2s infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
-.animate-pulse-whatsapp {
-  animation: pulse-whatsapp 2s ease-in-out infinite;
+@keyframes pulse-whatsapp {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@media (max-width: 768px) {
+  .floating-whatsapp {
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    transform: translateZ(0) !important;
+    -webkit-transform: translateZ(0) !important;
+  }
 }
 
 /* Hero gradient overlay */
